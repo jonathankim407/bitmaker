@@ -131,3 +131,7 @@ class CRM
   a_crm_app.main_menu
 
 end
+
+at_exit do
+  ActiveRecord::Base.connection.close
+end
