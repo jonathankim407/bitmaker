@@ -2,7 +2,7 @@ class Transporter
 
   def initialize(enterprise)
     @enterprise = enterprise
-    @power = false
+    @power = true # changed power from false to true
     connect_to_power
   end
 
