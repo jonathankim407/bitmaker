@@ -11,6 +11,13 @@ end
 # http://localhost:4567/portfolio
 
 get '/about_me' do
-  erb :bio
+  @skills = ['git', 'HTML', 'CSS', 'Ruby']
+  @interests = ['cats', 'art', 'music', 'films', 'coffee']
+  erb :about_me
 end
 # http://localhost:4567/about_me
+
+get '/favourites' do
+  @fav_links = ['http://www.google.ca', 'http://www.nba.com', 'http://www.realgm.com', 'http://www.youtube.com', 'http://www.wimp.com']
+  erb :favourites
+end
