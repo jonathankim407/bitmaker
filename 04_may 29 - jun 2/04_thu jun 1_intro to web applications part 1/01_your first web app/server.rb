@@ -21,3 +21,11 @@ get '/favourites' do
   @fav_links = ['http://www.google.ca', 'http://www.nba.com', 'http://www.realgm.com', 'http://www.youtube.com', 'http://www.wimp.com']
   erb :favourites
 end
+
+get '/' do
+  redirect to('/home')
+end
+
+get '/gallery' do
+  redirect to('/portfolio')
+end
