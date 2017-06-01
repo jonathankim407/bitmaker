@@ -1,0 +1,21 @@
+<!-- ERB = Embed Ruby Code -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= @title %></title>
+  </head>
+  <body>
+    <h1>Hello Dave!</h1>
+
+    <p>Good morning! It is now <%= @current_time %></p>
+
+    <ul>
+      <% @todo.each do |item| %>
+        <li><%= item %></li>
+      <% end %>
+    </ul>
+<!-- WRITE <% WHEN YOU DON'T NEED TO SHOW ON THE PAGE, USE <%= TO SHOW ON PAGE -->
+  </body>
+</html>
