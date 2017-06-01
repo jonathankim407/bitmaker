@@ -17,17 +17,8 @@ loop do                                             # Server runs forever
 
   header = "HTTP/1.1 200 OK"
   time = Time.now.ctime
-  response = "
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <title>My first web server</title>
-      </head>
-      <body>
-        <h1>My first web server</h1>
-        <p>Oh hey, this is my first HTML response!</p>
-      </body>
-    </html>"
+  filename = "index.html"
+  response = File.read(filename)
 
   client.puts(response)
 
