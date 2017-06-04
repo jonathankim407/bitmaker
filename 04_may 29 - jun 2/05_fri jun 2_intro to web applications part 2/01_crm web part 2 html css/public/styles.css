@@ -1,0 +1,85 @@
+* {
+  font-family: helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  text-align: left;
+  background-color: #E55B3C;
+  font-weight: normal;
+  padding: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.menu {
+  color: white;
+  list-style-type: none;
+  padding: 10px;
+  font-size: 30px;
+  margin-top: -15px;
+  margin-bottom: 0px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.contacts {
+  color: white;
+  list-style-type: none;
+  padding: 10px;
+  font-size: 30px;
+  margin-top: -10px;
+  margin-bottom: -5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.contact {
+  padding: 15px;
+  background-color: cyan;
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.edit {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+li {
+  padding: 8px;
+  background-color: #D1D0CE;
+  margin-bottom: 1px;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 1px;
+  font-weight: bold;
+}
+
+.four {
+  text-decoration: underline;
+  text-decoration-color: cyan;
+  font-weight: bold;
+}
