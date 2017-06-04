@@ -1,0 +1,10 @@
+<h2>There are <span class="four">4</span> contacts</h2>
+
+<ul class="contacts">
+  <% @contacts.each do |contact| %>
+    <li class="contact">
+      <%= contact.full_name %> (<%= contact.email %>)
+      <br><span class="edit"><a href="#">Edit</a> | <a href="#">Delete</a></span></br>
+    </li>
+  <% end %>
+</ul>
