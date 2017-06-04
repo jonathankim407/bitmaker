@@ -17,6 +17,13 @@ get '/about' do
 end
 # http://localhost:4567/about
 
+get '/contacts/:id' do
+  # params[:id] contains the id from the URL
+  @contact = Contact.find(params[:id].to_i)
+  erb :show_contact
+end
+# http://localhost:4567/contacts/:id
+
 after do
   ActiveRecord::Base.connection.close
 end
