@@ -1,12 +1,20 @@
 <h2>Film Library</h2>
 <ul>
   <% Film.all.each do |film| %>
-    <li><%= film.title %></li>
+    <li><%= film.title %>
+      <form action="/films" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <input type="hidden" name="id" value="<%= film.id %>">
+        <input type="submit" value="Delete this film">
+      </form>
+    </li>
   <% end %>
 </ul>
 
 <h2>New Film</h2>
 <form class="new-film" action="/films" method="post">
+  <!-- <input type="hidden" name="_method" value="put"> -->
+  <!-- <input type="hidden" name="_method" value="delete"> -->
   <div>
     <!-- input type: text -->
     <label for="film-title">Title:</label>
@@ -54,7 +62,7 @@
 
       <label for="rating4">
         <span>4 star</span>
-        <input type="radio" id="rating4" name="rating" value="5">
+        <input type="radio" id="rating4" name="rating" value="4">
       </label>
 
     </fieldset>
