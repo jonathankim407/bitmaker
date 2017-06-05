@@ -1,10 +1,10 @@
 <h1><%= @contact.full_name %></h1>
 
-<ul>
-  <li>First Name: <%= @contact.first_name %></li>
-  <li>Last Name: <%= @contact.last_name %></li>
-  <li>E-mail: <%= @contact.email %></li>
-  <li>Note: <%= @contact.note %></li>
+<ul class="menu">
+  <li><b>First Name: <%= @contact.first_name %></b></li>
+  <li><b>Last Name: <%= @contact.last_name %></b></li>
+  <li><b>E-mail: <%= @contact.email %></b></li>
+  <li><b>Note: <%= @contact.note %></b></li>
 </ul>
 
 <form action='/contacts/<%= @contact.id %>/edit' method='get'>
