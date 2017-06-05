@@ -20,7 +20,11 @@ end
 get '/contacts/:id' do
   # params[:id] contains the id from the URL
   @contact = Contact.find(params[:id].to_i)
-  erb :show_contact
+  if @contact
+    erb :show_contact
+  else
+    raise Sinatra::NotFound
+  end
 end
 # http://localhost:4567/contacts/:id
 
