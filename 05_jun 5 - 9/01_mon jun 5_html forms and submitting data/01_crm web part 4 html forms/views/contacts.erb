@@ -1,10 +1,21 @@
-<h2>There are <span class="four">4</span> contacts</h2>
+<h1>Contacts</h1>
+
+<h2>There are <span class="four"><%= Contact.all.count %></span> contacts</h2>
 
 <ul class="contacts">
   <% @contacts.each do |contact| %>
     <li class="contact">
       <a href=/contacts/<%= contact.id %>><%= contact.full_name %></a> (<%= contact.email %>)
-      <br><span class="edit"><a href="#">Edit</a> | <a href="#">Delete</a></span></br>
+      <br><span class="edit">
+        <form action='/contacts/<%= contact.id %>/edit' method='get'>
+          <input type='submit' value='Edit Contact'>
+        </form>
+        |
+        <form action='/contacts/<%= contact.id %>' method='post'>
+          <input type='hidden' name='_method' value='delete'>
+          <input type='submit' value='Delete Contact'>
+        </form>
+      </span></br>
     </li>
   <% end %>
 </ul>
