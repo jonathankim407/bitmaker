@@ -17,6 +17,11 @@ get '/about' do
 end
 # http://localhost:4567/about
 
+get '/contacts/new' do
+  erb :new_contact
+end
+# http://localhost:4567/contacts/new
+
 get '/contacts/:id' do
   # params[:id] contains the id from the URL
   @contact = Contact.find(params[:id].to_i)
