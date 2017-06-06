@@ -5,3 +5,15 @@ Second Choice: ____
 Third Choice: ____
 Fourth Choice: ____
 Fifth Choice: ____
+
+git branch branch_name
+git checkout branch_name
+*change file*
+git add .
+git commit -m ""
+git push origin branch_name
+git checkout master
+git merge branch_name
+git push origin master
+
+git pull origin master
